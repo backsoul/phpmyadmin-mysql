@@ -7,7 +7,7 @@ services:
       - 3333:3306
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=payment
+      - MYSQL_DATABASE=main
       - MYSQL_ROOT_USER=admin
       - MYSQL_PASSWORD=password
     networks:
@@ -20,9 +20,9 @@ services:
     environment:
       PMA_HOST: mysql
       UPLOAD_LIMIT: 300M
-      VIRTUAL_HOST: phpmyadmin.backsoul.xyz
+      VIRTUAL_HOST: phpmyadmin.backsoul.dev
       VIRTUAL_PORT: 80
-      LETSENCRYPT_HOST: phpmyadmin.backsoul.xyz
+      LETSENCRYPT_HOST: phpmyadmin.backsoul.dev
       LETSENCRYPT_EMAIL: danielsarmientoenterprise@gmail.com
     networks:
       - web   
